@@ -1,0 +1,59 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+//Oauth
+#define OAuthUrl @"https://api.weibo.com/oauth2/authorize?client_id=4039803932&redirect_uri=https://api.weibo.com/oauth2/default.html&response_type=token&display=mobile"
+
+// AccessToken Just for Test.
+#define AccessTokenX @"2.00f186zBwXb56E52f679831cLuggtB"
+
+//send weibo
+#define UpdateUrl @"https://api.weibo.com/2/statuses/update.json"
+
+//reply to comments
+#define ReplyUrl @"https://api.weibo.com/2/comments/reply.json"
+
+//send comment to weibos
+#define HuiFuUrl @"https://api.weibo.com/2/comments/create.json"
+
+//get the friends weibos
+#define FriendsWeibo @"https://api.weibo.com/2/statuses/bilateral_timeline.json"
+
+//get the weibo who i'm guanzhu
+#define FollowersUrl @"https://api.weibo.com/2/friendships/friends.json"
+
+//get the hotweibo
+#define Homeweibo @"https://api.weibo.com/2/statuses/home_timeline.json"
+
+//Repost A weibo
+#define RepostUrl @"https://api.weibo.com/2/statuses/repost.json"
+
+//get user's weibo
+#define UserWeibo @"https://api.weibo.com/2/statuses/user_timeline.json"
+
+//get the comments to me
+#define CommentsUrl @"https://api.weibo.com/2/comments/to_me.json"
+
+//logout the zhanghao
+#define logoutUrl @"https://api.weibo.com/2/account/end_session.json"
+
+//Show Comments by Weibo ID
+#define CommentsByID @"https://api.weibo.com/2/comments/show.json"
+
+//Show Reposts by Weibo ID
+#define RepostsByID @"https://api.weibo.com/2/statuses/repost_timeline.json"
